@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <script
+        defer
+        src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.8/dist/cdn.min.js"
+      ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+  <body x-data="{navbarOpen:false,scrolledFromTop:false}" 
+   @scroll.window="window.pageYOffset > 60 ?scrolledFromTop = true : scrolledFromTop =false">
+    <main>
+      <header 
+        class="fixed w-full flex justify-between items-center bg-transparent px-4 md:px-12 h-24"
+        :class="{'h-24' : !scrolledFromTop,'h-23' :scrolledFromTop}"
+      >
+        <a href="#">
+          <img src="/VRH/img/logo_svg.svg" alt="logo" class="h-10" />
+        </a>
+        <nav>
+          <button class="md:hidden" @click="navbarOpen =! navbarOpen">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="h-8 w-8 text-white"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+              />
+            </svg>
+          </button>
+
+          <ul
+            class="fixed top-0 left-0 right-0 min-h-screen bg-gray-50 md:bg-transparent space-y-4 p-4  transform translate-x-full transition duration-200 md:relative md:flex md:min-h-0 md:space-0 md-space-y-0 md:space-x-6 md:p-0 md:translate-x-0" 
+           :class="{'translate-x-full': !navbarOpen ,'translate-x-0':navbarOpen}"
+          >
+            <li><a href="#" class="text-black">About</a></li>
+            <li><a href="#" class="text-black">Hospital</a></li>
+            <li><a href="#" class="text-black">Specilaites</a></li>
+            <li><a href="#" class="text-black">FAQ</a></li>
+            <li><a href="#" class="text-black">Language</a></li>
+            <li><a href="#" class="text-black">Content</a></li>
+          </ul>
+        </nav>
+      </header>
+     <section class="min-h-100 bg-purple-400"> hello world</section>
+          <section class="min-h-100 bg-red-400"> hello world</section>
+               <section class="min-h-100 bg-green-400"> hello world</section>
+                    <section class="min-h-100 bg-sky-400"> hello world</section>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+/* @tailwind base
+@tailwind componets
+@tailwind utility
+
+@layer base{
+    html{
+        scroll-behavoir:smooth;
+    }
+} */
+ :root {
+  --blue: rgb(18, 71, 144);
+  --white: #ffffff;
+  --blueh:rgb(43, 105, 191);
+  --muted :rgb(99,95,104);
+  --orange:#E9680B
+ }
+
+html,body {
+   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+ .text-muted {
+  color: #6c757d !important;
+}
+
+.owl-carousel{
+ /* border: 2px solid black !important; */
+
+   /* position:  relative !important; */
+}
+
+.owl-nav button{
+    background-color: white !important;
+   border-radius: 50% !important;
+   width: 50px !important;
+    height: 50px !important;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
+     color: var(--blue) !important;
+     border-color: var(--blue) !important;
+
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top:calc(50% - 30px);
+  right: -25px;
+  opacity: 1;
+  font-size:  30px !important;
+  z-index: 1;
+
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top:calc(50% - 30px);
+  left:-25px;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+
+}
+.globe-spin{
+animation: globe-spin 5s linear infinite;
+}
+@keyframes globe-spin {
+  0% {
+    background-position-x:0
+  }
+  to {
+    background-position-x:380px
+  }
+}

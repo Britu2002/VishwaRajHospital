@@ -1,0 +1,48 @@
+/* 
+@font-face {
+  font-family: 'DINOT';
+  src: url('dinot-medium.cd1501ce.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DINOT-normal';
+  src: url('dinot-normal.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+} */
+
+@font-face {
+  font-family: 'DINOT';
+  src: url('dinot-normal.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DINOT-m';
+  src: url('dinot-medium.cd1501ce.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Hero';
+  src: url('hero.eb422eea.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito-sans';
+  src: url('nunito_sans.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+

@@ -1,0 +1,18 @@
+.dinot{
+  font-family: DINOT;
+}
+.dinot-m{
+   font-family: DINOT-m;
+}
+.hero{
+  font-family: Hero;
+}
+
+.nunito-sans{
+  font-family:Nunito-sans;
+}
+
+ :root {
+  --blue: rgb(18, 71, 144);
+  --white: #ffffff;
+}
